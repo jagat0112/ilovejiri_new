@@ -101,9 +101,9 @@ img {
 .hero-bg {
   box-shadow: inset 0px 5px 30px rgba(0, 0, 0, 0.459);
   height: 70vh;
-  background: url("../images/hero_ufr0ej_c_scalew_2800.webp") no-repeat;
+  background: url("../images/IMG_4876-01-cropped copy.jpg") no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,8 +137,8 @@ img {
 }
 @media screen and (max-width: 768px) {
   .blur--hero {
-    width: 75vw;
-    height: 20vh;
+    width: 83vw;
+    height: 14vh;
   }
 }
 .blur--hero h1 {
@@ -257,7 +257,6 @@ img {
   position: relative;
   background: white;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 78%, rgba(0, 0, 0, 0.5480567227) 100%);
-  transition: background 0.7s;
 }
 .welcome-photos__items .icon {
   display: none;
@@ -857,6 +856,10 @@ img {
 .nav .nav__lists a {
   font-weight: 700;
   text-transform: uppercase;
+  transition: color 0.2s;
+}
+.nav .nav__lists a:hover {
+  color: #17b978;
 }
 @media screen and (min-width: 450px) {
   .nav .nav__lists {
@@ -902,6 +905,13 @@ img {
   background-color: #319b58;
   color: #ffffff;
   padding: 4px 0;
+  cursor: pointer;
+}
+.alert .alert__icon {
+  color: white;
+}
+.alert .alert__icon i {
+  transition: transform 0.3s;
 }
 .alert p {
   margin: 0;
@@ -914,6 +924,10 @@ img {
     font-size: 1.6rem;
     content: "";
   }
+}
+
+.alert:hover .alert__icon i {
+  transform: translateX(10px);
 }
 
 /*# sourceMappingURL=style.css.map */

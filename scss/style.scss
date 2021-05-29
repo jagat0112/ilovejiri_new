@@ -1,5 +1,3 @@
-// @import url("./_hero.scss");
-
 // Topography
 $primary--color: rgb(23, 185, 120);
 $secondary--color: #3b4852;
@@ -114,9 +112,9 @@ img {
 .hero-bg {
   box-shadow: inset 0px 5px 30px rgba(0, 0, 0, 0.459);
   height: 70vh;
-  background: url("../images/hero_ufr0ej_c_scalew_2800.webp") no-repeat;
+  background: url("../images/IMG_4876-01-cropped\ copy.jpg") no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,8 +143,8 @@ img {
   z-index: 1;
 
   @media screen and (max-width: 768px) {
-    width: 75vw;
-    height: 20vh;
+    width: 83vw;
+    height: 14vh;
   }
 
   h1 {
@@ -275,7 +273,6 @@ img {
     rgba(255, 255, 255, 0) 78%,
     rgba(0, 0, 0, 0.5480567226890756) 100%
   );
-  transition: background 0.7s;
 
   .icon {
     display: none;
@@ -903,8 +900,12 @@ img {
       // display: none;
       font-weight: 700;
       text-transform: uppercase;
+      transition: color 0.2s;
     }
 
+    a:hover {
+      color: $primary--color;
+    }
     @media screen and (min-width: 450px) {
       grid-template-columns: repeat(4, 1fr);
       display: grid;
@@ -958,6 +959,14 @@ img {
   background-color: #319b58;
   color: #ffffff;
   padding: 4px 0;
+  cursor: pointer;
+
+  .alert__icon {
+    color: white;
+    i {
+      transition: transform 0.3s;
+    }
+  }
 
   p {
     margin: 0;
@@ -968,5 +977,11 @@ img {
       font-size: 1.6rem;
       content: "";
     }
+  }
+}
+
+.alert:hover {
+  .alert__icon i {
+    transform: translateX(10px);
   }
 }
