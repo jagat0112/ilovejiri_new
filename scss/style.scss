@@ -1,6 +1,6 @@
-/* TOPOGRAPHY */
-// @import url(./_hero.scss);
+// @import url("./_hero.scss");
 
+// Topography
 $primary--color: rgb(23, 185, 120);
 $secondary--color: #3b4852;
 $accent-color: #fe7c5b;
@@ -465,7 +465,7 @@ img {
     font-size: 3.2rem;
   }
 
-  @media screen and (min-width: 678px) {
+  @media screen and (min-width: 768px) {
     flex-direction: row;
     font-size: 2rem;
     h2 {
@@ -658,7 +658,7 @@ img {
     gap: 1rem;
     justify-content: center;
 
-    @media screen and (min-width: 678px) {
+    @media screen and (min-width: 768px) {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
     }
@@ -850,14 +850,15 @@ img {
 
 // NAV
 .nav {
-  display: grid;
-  grid-template-columns: 25vw auto;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 
-  @media screen and (max-width: 678px) {
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
+  @media screen and (min-width: 450px) {
+    display: grid;
+    grid-template-columns: 15vw 80vw;
+    height: 90px;
   }
   .nav__img {
     height: 100%;
@@ -865,55 +866,86 @@ img {
     flex-basis: 1;
     img {
       width: 100%;
+      max-width: 100px;
       height: 100%;
       object-fit: contain;
     }
   }
   .nav__lists {
-    list-style-type: none;
-    padding: 0 1rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    // grid-template-columns: repeat(auto, 1fr);
-
     align-items: center;
+    background-color: $background--color;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 1fr);
+    height: 100vh;
+    opacity: 0;
+    overflow: hidden;
     justify-items: center;
+    list-style-type: none;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    z-index: 2;
+    transition: width 1s, opacity 2s;
+
+    // border-radius: 0 0 0 10px;
+    li {
+      border-bottom: 1px solid $secondary--color;
+    }
 
     a {
+      // display: none;
       font-weight: 700;
       text-transform: uppercase;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1020px) {
+    @media screen and (min-width: 450px) {
+      grid-template-columns: repeat(4, 1fr);
+      display: grid;
+      height: 100%;
+      max-width: 100%;
+      width: 100%;
+      opacity: 1;
+
+      position: relative;
+      padding: 0;
+
+      li {
+        border-bottom: 0px;
+      }
+    }
+    @media screen and (min-width: 768px) {
       a {
         font-size: 1.5rem;
       }
     }
-    @media screen and (max-width: 678px) {
+  }
+
+  .nav_hamburger {
+    display: block;
+    align-self: center;
+    padding: 10px;
+    z-index: 3;
+
+    @media screen and (min-width: 768px) {
       display: none;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(auto, 1fr);
-      width: 100vw;
-      height: 100vh;
-      position: absolute;
-      background-color: $background--color;
-      top: 0px;
-      right: 0;
-      margin: 0;
-      z-index: 2;
-      border-radius: 0 0 0 10px;
-      li {
-        border-bottom: 1px solid $secondary--color;
-      }
+    }
+  }
+}
+
+.collapsible.collapsible--active {
+  .nav__lists {
+    width: 100vw;
+    opacity: 1;
+
+    a {
+      // display: block;
     }
   }
   .nav_hamburger {
-    display: none;
-    padding: 20px;
-    @media screen and (max-width: 678px) {
-      display: block;
-      align-self: center;
-    }
+    content: "<h1>X</h1>";
   }
 }
 
@@ -928,7 +960,7 @@ img {
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
-    @media screen and (min-width: 678px) {
+    @media screen and (min-width: 768px) {
       font-size: 1.6rem;
       content: "";
     }
