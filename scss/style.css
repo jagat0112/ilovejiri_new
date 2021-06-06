@@ -1429,4 +1429,38 @@ img {
      object-fit: cover;
   height: 400px;
 }
+
+.our-team__position {
+  margin-bottom: 7px;
+}
+
+.our-team__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.our-team__links span {
+  margin-right: 20px;
+}
+
+.our-team__links a {
+  background: #3b4852;
+  color: white;
+  border-radius: 100%;
+  padding: 2px 9px;
+}
+
+.our-team__links a i {
+  width: 15px;
+}
 /*# sourceMappingURL=style.css.map */
