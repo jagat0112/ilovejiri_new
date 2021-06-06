@@ -232,6 +232,12 @@ img {
   }
 }
 
+.photo-credit {
+  font-size: 0.6rem;
+  text-align: center;
+  font-style: italic;
+}
+
 // WELCOME
 .welcome {
   text-align: center;
@@ -475,7 +481,12 @@ img {
 .itinerary--heading {
   margin-top: 0;
   text-align: center;
+  font-size: 3rem;
+
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    font-size: 4rem;
+  }
 }
 .itinerary--heading--name {
   color: #319b58;
@@ -484,7 +495,7 @@ img {
 .itinerary-grid--2X3 {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(1fr, 6);
-  gap: 2rem;
+  gap: 15px;
 
   @media screen and (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
@@ -945,5 +956,200 @@ img {
 .alert:hover {
   .alert__icon i {
     transform: translateX(10px);
+  }
+}
+
+// Our Team
+.places__items {
+  // border-radius: 5px;
+
+  .card {
+    border-radius: 0;
+  }
+  .card:hover {
+    transform: scale(1.01);
+  }
+
+  margin: 4rem 0;
+  &--grid {
+    display: grid;
+    gap: 0px;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  .places__item {
+    height: 400px;
+    overflow: hidden;
+
+    .places__btn {
+      height: 100%;
+
+      @media screen and (min-width: 1024px) {
+        height: 0;
+        transition: height 0.2s;
+      }
+    }
+
+    button,
+    h3 {
+      margin: 8px auto;
+      display: flex;
+      justify-content: center;
+    }
+    h3 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+  .places__img {
+    height: 75%;
+    object-fit: cover;
+  }
+
+  .places__item--1 {
+    background: url(../images/cherdung-it.webp), no-repeat;
+  }
+
+  .places__item--2 {
+    background: url(../images/tamee.jpg), no-repeat;
+  }
+
+  .places__item--3 {
+    background: url(../images/jattapokhari.JPG), no-repeat;
+  }
+
+  .places__item--4 {
+    background: url(../images/stonepark.JPG), no-repeat;
+  }
+
+  .places__item--5 {
+    background: url(../images/kyanse.JPG);
+  }
+
+  .places__item--6 {
+    background: url(../images/fishfarm.JPG);
+  }
+
+  .places__item--7 {
+    background: url(../images/fishfarm.JPG);
+  }
+  .places__item--8 {
+    background: url(../images/kaloveer.JPG);
+  }
+
+  .places__item {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .places__item--text {
+      opacity: 0.8;
+      transition: opacity 1s, background 1s;
+      background-color: rgba(0, 0, 0, 0.399);
+
+      @media screen and (min-width: 1024px) {
+        opacity: 0.8;
+      }
+      h3 {
+        color: white;
+        transition: color 0.4s;
+      }
+      .itinerary--btn {
+        background: none;
+        border-color: rgba(255, 255, 255, 0.44);
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    .places-show-all {
+      justify-self: center;
+    }
+  }
+
+  .places__item:hover {
+    .places__btn {
+      height: 100%;
+      display: block;
+    }
+    .places__item--text {
+      opacity: 1;
+      background-color: rgba(255, 255, 255, 1);
+      button,
+      h3 {
+        color: $secondary--color;
+        border-color: $secondary--color;
+      }
+    }
+  }
+}
+
+.sub-heading {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  @media screen and (min-width: 1024px) {
+    font-size: 2rem;
+  }
+}
+
+.card__items__header {
+  font-size: 3rem;
+  @media screen and(min-width:1024px) {
+    font-size: 4rem;
+  }
+}
+
+.places-show-all--btn {
+  background-color: $primary--color;
+  color: white;
+  padding: 2rem 6rem;
+  margin: 2rem 0;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+.places-show-all--btn:hover {
+  background-color: $text--color;
+}
+
+// Our Team
+.our-team {
+  text-align: center;
+
+  &__items--grid {
+    display: grid;
+    gap: 15px;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  &__items {
+    margin: 3rem 0;
+  }
+  &__desc {
+    margin: 15px 0;
+    h3 {
+      margin: 0;
+      font-weight: 700;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  &__img {
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+    height: 400px;
   }
 }

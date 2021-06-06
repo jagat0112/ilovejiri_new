@@ -1,478 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap"
       rel="stylesheet"
     />
-		<link
+    <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<title>Namaste! Welcome to I love Jiri.</title>
-    <meta property="og:title" content="I love Jiri - Your Travel Guide, Tour Operator and Travel Companion" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <title>Namaste! Welcome to I love Jiri.</title>
+    <meta
+      property="og:title"
+      content="I love Jiri - Your Travel Guide, Tour Operator and Travel Companion"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.ilovejiri.com/" />
-    <meta property="og:image" content="https://www.ilovejiri.com/5po.382acbc8.jpeg" />
-    <meta property="og:description" 
-  content="Welcome the I love Jiri, an domestic management company of Jiri. Our
+    <meta
+      property="og:image"
+      content="https://www.ilovejiri.com/5po.382acbc8.jpeg"
+    />
+    <meta
+      property="og:description"
+      content="Welcome the I love Jiri, an domestic management company of Jiri. Our
   website will guide you through various touristic destination of Jiri
   and also different tour packages to help you experience best out of
-  this amazing destination." />
-	</head>
-	<body>
-		<!-- Nav -->
-		<div class="header">
-			<div class="alert">
-				<p>Alert: COVID-19 updates and travel advisories  
-					<span class="alert__icon">
-						<i class="fas fa-arrow-right"></i>
-					</span>
-				</p>
-			</div>
-			<nav class="nav collapsible">
-				<div class="nav__img">
-					<img src="./brand.png" alt="" srcset="">
-					</div>
-					<ul class="nav__lists">
-						<li>
-							<a href="#">Places to go </a>
-						</li>
-						<li>
-							<a href="#">Tour packages</a>
-						</li>
-						<li>
-							<a href="#">Our Team</a>
-						</li>
-						<li>
-							<a href="#">About I love jiri</a>
-						</li>
-					</ul>
-					<div class="nav_hamburger ">
-						<i class="fas fa-bars"></i>
-					</div>
-				</nav>
-			</div>
-			<!-- HERO -->
-			<div class="hero">
-				<div class="hero-bg" data-aos="fade-up">
-					<div class="blur--hero"  >
-						<h1 style='color:white; text-align: center;'>
-           EXPLORE BEST IN JIRI
-          </h1>
-						<p style='color:#F5F6F6; text-align: center;'>Your Travel Guide, Tour Operator and Travel Companion</p>
-					</div>
-				</div>
-			</div>
-			<div class="hero-desc hero-desc--postion flex">
-				<div class="hero-desc__img" data-aos="zoom-in-right"> 
-					<img src="./images/sumitra.jpg" />
-				</div>
-				<div class="hero-desc__text"  data-aos="fade-left">
-					<h4 class="hero-desc__title">Jiri, An Ecotourist Destination</h4>
-					<p class="hero-desc__desc">
-            Welcome the I love Jiri, an domestic management company of Jiri. Our
-            website will guide you through various touristic destination of Jiri
-            and also different tour packages to help you experience best out of
-            this amazing destination.
-            
-						<span class="hero-desc__more">
-							<a href="">MORE</a>
-						</span>
-					</p>
-				</div>
-			</div>
-		</div>
-		<!-- HERO -->
-		<!-- Why Jiri -->
-		<article class="why-jiri container" style="margin-top: 20px">
-			<p class="why-jiri__sub-heading" data-aos="fade-up">JIRI SPECIAL</p>
-			<h2 class="why-jiri__heading" data-aos="fade-up">WHY TO TRAVEL JIRI?</h2>
-			<div class="why-jiri__card">
-				<div class="why-jiri__item" data-aos="fade-right">
-					<img class="why-jiri__img" src="./images/5po.jpeg" />
-					<div class="why-jiri__icon">
-						<img class="why-jiri__icon-img" src="./icons/hiking-solid.svg" />
-					</div>
-					<div class="why-jiri__item__text">
-						<p  class="why-jiri__item__text">
-              Lifetime Memory of Adventure
-            </p>
-					</div>
-				</div>
-				<div class="why-jiri__item" data-aos="fade-right">
-					<img class="why-jiri__img" src="./images/nature.jpeg" />
-					<div class="why-jiri__icon">
-						<img class="why-jiri__icon-img" src="./icons/leaf-solid.svg" />
-					</div>
-					<div class="why-jiri__item__text">
-						<p  class="why-jiri__item__text">
-              Nature's untouched beauty
-            </p>
-					</div>
-				</div>
-				<div class="why-jiri__item" data-aos="fade-right">
-					<img class="why-jiri__img" src="./images/wea.jpeg" />
-					<div class="why-jiri__icon">
-						<img
+  this amazing destination."
+    />
+  </head>
+  <body>
+    <!-- Nav -->
+    <div class="header">
+      <div class="alert">
+        <p>
+          Alert: COVID-19 updates and travel advisories
+          <span class="alert__icon">
+            <i class="fas fa-arrow-right"></i>
+          </span>
+        </p>
+      </div>
+      <nav class="nav collapsible">
+        <div class="nav__img">
+          <img src="./brand.png" alt="" srcset="" />
+        </div>
+        <ul class="nav__lists">
+          <li>
+            <a href="#">Places to go </a>
+          </li>
+          <li>
+            <a href="#">Tour packages</a>
+          </li>
+          <li>
+            <a href="#">Our Team</a>
+          </li>
+          <li>
+            <a href="#">About I love jiri</a>
+          </li>
+        </ul>
+        <div class="nav_hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-bg" data-aos="fade-up">
+        <div class="blur--hero">
+          <h1 style="color: white; text-align: center">EXPLORE BEST IN JIRI</h1>
+          <p style="color: #f5f6f6; text-align: center">
+            Your Travel Guide, Tour Operator and Travel Companion
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-desc hero-desc--postion flex">
+      <div class="hero-desc__img" data-aos="zoom-in-right">
+        <img src="./images/sumitra.jpg" />
+        <!-- <a href="" class="photo-credit">Photo:Sumitra Acharya</a> -->
+      </div>
+      <div class="hero-desc__text" data-aos="fade-left">
+        <h4 class="hero-desc__title">Jiri, An Ecotourist Destination</h4>
+        <p class="hero-desc__desc">
+          Welcome the I love Jiri, an domestic management company of Jiri. Our
+          website will guide you through various touristic destination of Jiri
+          and also different tour packages to help you experience best out of
+          this amazing destination.
+
+          <span class="hero-desc__more">
+            <a href="">MORE</a>
+          </span>
+        </p>
+      </div>
+    </div>
+    <!-- HERO -->
+    <!-- Why Jiri -->
+    <article class="why-jiri container" style="margin-top: 20px">
+      <p class="why-jiri__sub-heading" data-aos="fade-up">JIRI SPECIAL</p>
+      <h2 class="why-jiri__heading" data-aos="fade-up">WHY TO TRAVEL JIRI?</h2>
+      <div class="why-jiri__card">
+        <div class="why-jiri__item" data-aos="fade-right">
+          <img class="why-jiri__img" src="./images/5po.jpeg" />
+          <div class="why-jiri__icon">
+            <img class="why-jiri__icon-img" src="./icons/hiking-solid.svg" />
+          </div>
+          <div class="why-jiri__item__text">
+            <p class="why-jiri__item__text">Lifetime Memory of Adventure</p>
+          </div>
+        </div>
+        <div class="why-jiri__item" data-aos="fade-right">
+          <img class="why-jiri__img" src="./images/nature.jpeg" />
+          <div class="why-jiri__icon">
+            <img class="why-jiri__icon-img" src="./icons/leaf-solid.svg" />
+          </div>
+          <div class="why-jiri__item__text">
+            <p class="why-jiri__item__text">Nature's untouched beauty</p>
+          </div>
+        </div>
+        <div class="why-jiri__item" data-aos="fade-right">
+          <img class="why-jiri__img" src="./images/cloudyjiri.jpeg" />
+          <div class="why-jiri__icon">
+            <img
               class="why-jiri__icon-img"
               src="./icons/temperature-low-solid.svg"
             />
-					</div>
-					<div class="why-jiri__item__text" >
-						<p  class="why-jiri__item__text">
-              Refreshing weather & environment
-            </p>
-					</div>
-				</div>
-				<div class="why-jiri__item" data-aos="fade-right">
-					<img
+          </div>
+          <div class="why-jiri__item__text">
+            <p class="why-jiri__item__text">Refreshing weather & environment</p>
+          </div>
+        </div>
+        <div class="why-jiri__item" data-aos="fade-right">
+          <img
             class="why-jiri__img"
             src="./images/way.jpg"
             style="object-position: bottom"
           />
-					<div class="why-jiri__icon" >
-						<img class="why-jiri__icon-img" src="./icons/route-solid.svg" />
-					</div>
-					<div class="why-jiri__item__text">
-						<p  class="why-jiri__item__text">
+          <div class="why-jiri__icon">
+            <img class="why-jiri__icon-img" src="./icons/route-solid.svg" />
+          </div>
+          <div class="why-jiri__item__text">
+            <p class="why-jiri__item__text">
               Less than 6 hours drive from Kathmandu
             </p>
-					</div>
-				</div>
-			</div>
-		</article>
-		<p class="container">
+          </div>
+        </div>
+      </div>
+    </article>
+    <p class="container">
       You can try to show the magnitude of a mountain vista or the quiet bliss
       of a hot spring. But truth is, you really have to be here to get it.
     </p>
-		<!-- Info Section -->
-		<div class="info-section container">
-			<div style="position: relative" class="info-section--grid">
-				<div class="box-1 transition">
-					<a href="#"
-            >
-						<p class="box-1__text box-1__text--flex" data-aos="zoom-in-right">
-              Trip Ideas 
-							<span>
-								<i class="fas fa-arrow-right"></i>
-							</span>
-						</p
-          >
-					</a>
-				</div>
-				<div class="box-2 grid grid--1X1">
-					<div class="box-2a transition">
-						<a href="">
-							<p class="box-1__text box-1__text--flex">
+    <!-- Info Section -->
+    <div class="info-section container">
+      <div style="position: relative" class="info-section--grid">
+        <div class="box-1 transition">
+          <a href="#">
+            <p class="box-1__text box-1__text--flex" data-aos="zoom-in-right">
+              Trip Ideas
+              <span>
+                <i class="fas fa-arrow-right"></i>
+              </span>
+            </p>
+          </a>
+        </div>
+        <div class="box-2 grid grid--1X1">
+          <div class="box-2a transition">
+            <a href="">
+              <p class="box-1__text box-1__text--flex">
                 How to Reach Jiri?
-                
-								<span>
-									<i class="fas fa-arrow-right"></i>
-								</span>
-							</p>
-						</a>
-					</div>
-					<div class="box-2b transition">
-						<a href=""
-              >
-							<p class="box-1__text box-1__text--flex" style="fill: red">
+
+                <span>
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </p>
+            </a>
+          </div>
+          <div class="box-2b transition">
+            <a href="">
+              <p class="box-1__text box-1__text--flex" style="fill: red">
                 Outdoor Adventures
-                
-								<span>
-									<i class="fas fa-arrow-right"></i>
-								</span>
-							</p
-            >
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Where is Jiri -->
-		<div class="where-jiri flex">
-			<div class="where-jiri-desc">
-				<h2>WHERE IS JIRI, ANYWAY?</h2>
-				<p>
+
+                <span>
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Where is Jiri -->
+    <div class="where-jiri flex">
+      <div class="where-jiri-desc">
+        <h2>WHERE IS JIRI, ANYWAY?</h2>
+        <p>
           Not familiar with Nepalese geography? Jiri is on the central Nepal,
           only 180 km of ride away from Kathmandu. Some people think it's the
           best thing about the Bagmati Pradesh, and of course they're right.
         </p>
-				<p>
-          Made up of seven diverse regions, Jiri has beautiful hills, mountains,
-          valleys, high desert, small towns, hemlets ,and almost everything in
-          between.
+        <p>
+          Made up of diverse regions, Jiri has beautiful hills, mountains,
+          valleys, small towns, hemlets ,and almost everything in between.
         </p>
-			</div>
-			<div class="where-jiri-img where-jiri-img--height">
-				<img src="./images/map.png" />
-			</div>
-		</div>
-		<!-- Itinerary -->
-		<div class="itinerary container">
-			<p style="text-align: center; margin-bottom: 0" data-aos="fade-up">MODERN & BEAUTIFUL</p>
-			<h2 class="itinerary--heading" data-aos="fade-up">
+      </div>
+      <div class="where-jiri-img where-jiri-img--height">
+        <img src="./images/map.png" />
+      </div>
+    </div>
+    <!-- Itinerary -->
+    <div class="itinerary container">
+      <p class="sub-heading" data-aos="fade-up">MODERN & BEAUTIFUL</p>
+      <h2 class="itinerary--heading" data-aos="fade-up">
         Travel with
-        
-				<span class="itinerary--heading--name" style="white-space: nowrap">
+
+        <span class="itinerary--heading--name" style="white-space: nowrap">
           I love Jiri</span
         >
-			</h2>
-			<div class="grid itinerary-grid--2X3 itinerary__items">
-				<div class="card item--1" data-aos="fade-up">
-					<img class="itinerary-img" src="./images/cherdung-it.webp" alt="" />
-					<div class="itinerary__item--text">
-						<h3>Cherdung Trek</h3>
-						<p class="price-section">
-							<span class="price-tag">NPR 16,000/- </span>Per person
-            
-						</p>
-						<div class="location--card">
-							<p>
-								<i class="fas fa-calendar-day"></i> 5 Days |
-                
-								<i class="fas fa-map-signs"></i>
+      </h2>
+      <div class="grid itinerary-grid--2X3 itinerary__items">
+        <div class="card item--1" data-aos="fade-up">
+          <img class="itinerary-img" src="./images/cherdung-it.webp" alt="" />
+          <div class="itinerary__item--text">
+            <h3>Cherdung Trek</h3>
+            <p class="price-section">
+              <span class="price-tag">NPR 9,000/- </span>Per person
+            </p>
+            <div class="location--card">
+              <p>
+                <i class="fas fa-calendar-day"></i> 5 Days |
+
+                <i class="fas fa-map-signs"></i>
                 Cherdung (3450m)
-              
-							</p>
-						</div>
-						<button class="itinerary--btn">View Details</button>
-					</div>
-				</div>
-				<div class="card item--2" data-aos="fade-up">
-					<img class="itinerary-img" src="./images/jiri.jpg" alt="" />
-					<div class="itinerary__item--text">
-						<h3>Classic Jiri Tour</h3>
-						<p class="price-section">
-							<span class="price-tag">NPR 14,000/- </span>Per person
-            
-						</p>
-						<div class="location--card">
-							<p>
-								<i class="fas fa-calendar-day"></i> 5 Days |
-                
-								<i class="fas fa-map-signs"></i>
-                Stone Park, Jiri Airpot...
-              
-							</p>
-						</div>
-						<button class="itinerary--btn">View Details</button>
-					</div>
-				</div>
-				<div class="card item--3" data-aos="fade-up">
-					<img class="itinerary-img" src="./images/tamee.jpg" alt="" />
-					<div class="itinerary__item--text">
-						<h3 style="word-spacing: normal">Jiri & Tame Camping</h3>
-						<p class="price-section">
-							<span class="price-tag">NPR 14,000/- </span>Per person
-            
-						</p>
-						<div class="location--card">
-							<p>
-								<i class="fas fa-calendar-day"></i> 5 Days |
-                
-								<i class="fas fa-map-signs"></i>
+              </p>
+            </div>
+            <button class="itinerary--btn">View Details</button>
+          </div>
+        </div>
+        <div class="card item--2" data-aos="fade-up">
+          <img class="itinerary-img" src="./images/jiri.jpg" alt="" />
+          <div class="itinerary__item--text">
+            <h3>Classic Jiri Tour</h3>
+            <p class="price-section">
+              <span class="price-tag">NPR 4,000/- </span>Per person
+            </p>
+            <div class="location--card">
+              <p>
+                <i class="fas fa-calendar-day"></i> 3 Days |
+
+                <i class="fas fa-map-signs"></i>
+                Stone Park, Tony Hegan Park...
+              </p>
+            </div>
+            <button class="itinerary--btn">View Details</button>
+          </div>
+        </div>
+        <div class="card item--3" data-aos="fade-up">
+          <img class="itinerary-img" src="./images/tamee.jpg" alt="" />
+          <div class="itinerary__item--text">
+            <h3 style="word-spacing: normal">Jiri & Tame Camping</h3>
+            <p class="price-section">
+              <span class="price-tag">NPR 8,000/- </span>Per person
+            </p>
+            <div class="location--card">
+              <p>
+                <i class="fas fa-calendar-day"></i> 5 Days |
+
+                <i class="fas fa-map-signs"></i>
                 Tame Danda Camping
-              
-							</p>
-						</div>
-						<button class="itinerary--btn">View Details</button>
-					</div>
-				</div>
-				<div class="card item--4" data-aos="fade-up">
-					<picture>
-						<img    
-            src="/images/panch_pokhari_sgtxre/panch_pokhari_sgtxre_c_scale_w_650.jpg"
-            alt="">
-						</picture>
-						<div class="itinerary__item--text">
-							<h3 style="word-spacing: normal">Panch Pokhari Trek</h3>
-							<p class="price-section">
-								<span class="price-tag">NPR 22,000/- </span>Per person
-            
-							</p>
-							<div class="location--card">
-								<p>
-									<i class="fas fa-calendar-day"></i> 5 Days |
-                
-									<i class="fas fa-map-signs"></i>
+              </p>
+            </div>
+            <button class="itinerary--btn">View Details</button>
+          </div>
+        </div>
+        <div class="card item--4" data-aos="fade-up">
+          <picture>
+            <img
+              src="/images/panch_pokhari_sgtxre/panch_pokhari_sgtxre_c_scale_w_650.jpg"
+              alt=""
+            />
+          </picture>
+          <div class="itinerary__item--text">
+            <h3 style="word-spacing: normal">Panch Pokhari Trek</h3>
+            <p class="price-section">
+              <span class="price-tag">NPR 22,000/- </span>Per person
+            </p>
+            <div class="location--card">
+              <p>
+                <i class="fas fa-calendar-day"></i> 5 Days |
+
+                <i class="fas fa-map-signs"></i>
                 Panch Pokhari & Jatta Pokhari
-              
-								</p>
-							</div>
-							<button class="itinerary--btn">View Details</button>
-						</div>
-					</div>
-					<div class="card item--5" data-aos="fade-up">
-						<img
+              </p>
+            </div>
+            <button class="itinerary--btn">View Details</button>
+          </div>
+        </div>
+        <div class="card item--5" data-aos="fade-up">
+          <img
             class="itinerary-img"
             src="./images/kalinchowk.jpeg"
             alt=""
             style="object-position: bottom"
           />
-						<div class="itinerary__item--text">
-							<h3 style="word-spacing: normal">Jiri & Kalinchowk Tour</h3>
-							<p class="price-section">
-								<span class="price-tag">NPR 11,000/- </span>Per person
-            
-							</p>
-							<div class="location--card">
-								<p>
-									<i class="fas fa-calendar-day"></i> 5 Days |
-                
-									<i class="fas fa-map-signs"></i>
+          <div class="itinerary__item--text">
+            <h3 style="word-spacing: normal">Jiri & Kalinchowk Tour</h3>
+            <p class="price-section">
+              <span class="price-tag">NPR 7,500/- </span>Per person
+            </p>
+            <div class="location--card">
+              <p>
+                <i class="fas fa-calendar-day"></i> 5 Days |
+
+                <i class="fas fa-map-signs"></i>
                 Kalinchowk, Dolakha & Jiri
-              
-								</p>
-							</div>
-							<button class="itinerary--btn">View Details</button>
-						</div>
-					</div>
-					<div class="item--6" >
-						<div class="itinerary-show-all">
-							<h2>Find All Tour Packages</h2>
-							<button class="itinerary-show-all--btn">Show All</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- FOOTER -->
-			<footer class="footer">
-				<div class="footer--grid footer--margin container">
-					<div class="footer-about">
-						<div class="footer__brand">
-							<img class="footer__brand__img" src="./images/brand.png"/>
-						</div>
-						<p>
-            I love Jiri is a Destination Management Company for Jiri.  We intregate local resources to give our clients best experince during thier trip. 
+              </p>
+            </div>
+            <button class="itinerary--btn">View Details</button>
+          </div>
+        </div>
+        <div class="item--6">
+          <div class="itinerary-show-all">
+            <h2>Find All Tour Packages</h2>
+            <button class="itinerary-show-all--btn">Show All</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Where to Travel -->
+    <div class="places">
+      <div>
+        <p class="sub-heading" data-aos="fade-up">PLACES AND ATTRACTIONS</p>
+        <h2 class="itinerary--heading" data-aos="fade-up">
+          WHERE TO TRAVEL IN JIRI
+        </h2>
+      </div>
+      <div class="places__items places__items--grid">
+        <div class="places__item places__item--1 card">
+          <div class="places__item--text">
+            <h3>Cherdung</h3>
+            <div class="places__btn">
+              <button class="itinerary--btn">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="places__item places__item--2 card">
+          <div class="places__item--text">
+            <h3>Tamee Danda Ramechhap</h3>
+            <div class="places__btn">
+              <button class="itinerary--btn">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="places__item places__item--3 card">
+          <div class="places__item--text">
+            <h3>Panch Pokhari</h3>
+            <div class="places__btn">
+              <button class="itinerary--btn">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="places__item places__item--4 card">
+          <div class="places__item--text">
+            <h3>Stone Park</h3>
+            <div class="places__btn">
+              <button class="itinerary--btn">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="places__item places__item--5 card">
+          <div class="places__item--text">
+            <h3>Kyanse Pokhari</h3>
+            <div class="places__btn">
+              <button class="itinerary--btn">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="places__item places__item--6 card">
+          <div class="places__item--text">
+            <h3>Jiri Airport</h3>
+            <div class="places__btn">
+              <button class="itinerary--btn">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="places__item places__item--7 card">
+          <div class="places__item--text">
+            <h3>Hanumante</h3>
+            <div class="places__btn">
+              <button class="itinerary--btn">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="places__item places__item--8 card">
+          <div class="places__item--text">
+            <h3>Kaloveer</h3>
+            <div class="places__btn">
+              <button class="itinerary--btn">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Team -->
+    <article class="our-team container">
+      <div>
+        <p class="sub-heading" data-aos="fade-up">Our team</p>
+        <h2 class="itinerary--heading" data-aos="fade-up">
+          those who made this possible
+        </h2>
+      </div>
+      <div class="our-team__items our-team__items--grid">
+        <div class="our-team__item card">
+          <img class="our-team__img" src="./images/jagat.jpeg" />
+          <div class="our-team__desc">
+            <h3 class="our-team__name">Jagat Pradhan</h3>
+            <p class="our-team__position">Founder & Tour Operator</p>
+          </div>
+        </div>
+        <div class="our-team__item card">
+          <img class="our-team__img" src="./images/santadai.jpg" />
+          <div class="our-team__desc">
+            <h3 class="our-team__name">Santa Bahadur Jirel</h3>
+            <p class="our-team__position">
+              Professional Trekking Guide & Logistics Manager
+            </p>
+          </div>
+        </div>
+        <div class="our-team__item card">
+          <img class="our-team__img" src="./images/janak.jpeg" />
+          <div class="our-team__desc">
+            <h3 class="our-team__name">Janak Pradhan</h3>
+            <p class="our-team__position">Social Media Marketing</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer--grid footer--margin container">
+        <div class="footer-about">
+          <div class="footer__brand">
+            <img class="footer__brand__img" src="./images/brand.png" />
+          </div>
+          <p>
+            I love Jiri is a Destination Management Company for Jiri. We combine
+            local resources to give our clients best experience during thier
+            trip.
           </p>
-						<div class="footer-links footer-links--grid">
-							<span
-              >
-								<a href="https://www.facebook.com/ilovejiri" target="_blank">
-									<i class="fab fa-facebook-f"></i>
-								</a>
-							</span
-            >
-							<i class="fab fa-tripadvisor"></i>
-							<span>
-								<a href="https://www.instagram.com/ilovejiri/" target="_blank">
-									<i class="fab fa-instagram"></i>
-								</a>
-							</i>
-						</span
-            >
-						<span>
-							<a href="">
-								<i class="fab fa-whatsapp"></i>
-							</a>
-						</i>
-					</span>
-					<span>
-						<a href="https://www.snapchat.com/add/jgtpradhan" target="_blank">
-							<i class="fab fa-snapchat-ghost"></i>
-						</a>
-					</i>
-				</span>
-			</div>
-		</div>
-		<div class="footer-services">
-			<h4>Services</h4>
-			<ul class="lists">
-				<li>
-					<a href="">About Us</a>
-				</li>
-				<li>
-					<a href="">How It Works</a>
-				</li>
-				<li>
-					<a href="">Our Blog</a>
-				</li>
-				<li>
-					<a href="">Our Services</a>
-				</li>
-				<li>
-					<a href="">Write for I love Jiri</a>
-				</li>
-			</ul>
-		</div>
-		<div class="footer-gallery">
-			<h4>Gallery</h4>
-			<div class="footer-gallery__items">
-				<img
-              class="footer-gallery__item"
-              src="./images/footer5.jpeg"
-            />
-				<img
-              class="footer-gallery__item"
-              src="./images/footer4.jpeg"
-            />
-				<img
-              class="footer-gallery__item"
-              src="./images/footer-3.jpeg"
-            />
-				<img
-              class="footer-gallery__item"
-              src="./images/footer-img2.jpeg"
-            />
-				<img
-              class="footer-gallery__item"
-              src="./images/footer-img1.jpeg"
-            />
-				<img
-              class="footer-gallery__item"
-              src="./images/footer6.jpeg"
-            />
-			</div>
-		</div>
-		<div class="footer-contacts" style="margin: auto 20px">
-			<h4>Contacts</h4>
-			<ul class="lists">
-				<li>
-					<i class="fas fa-map-marker-alt"></i>
-              Old Baneswor, Kathmandu, Nepal
-            
-				</li>
-				<li>
-					<i class="fas fa-map-marker-alt"></i>
-              Jiri-05, Dolakha, Nepal
-            
-				</li>
-				<li>
-					<i class="fas fa-mobile"></i> +977-9851255782
-				</li>
-				<li>
-					<a href = "mailto: contact@ilovejiri.com">
-						<i class="fas fa-envelope"></i> contact@ilovejiri.com
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<h4 class="footer-about--small">
-        ©2021 I Love Jiri | The official guide to Jiri travel and tourism information. 
-		<br>
-			<a href="https://github.com/jagat0112" target="_blank">
-				<i class="fas fa-code"></i> Website By
-				<span style="font-weight: 600;"> Jagat Pradhan</span>
-			</a>
-		</h4>
-		<section class="footer__img">
-			<img src="./images/aaaa.jpg" />
-		</section>
-	</footer>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
+          <div class="footer-links footer-links--grid">
+            <span>
+              <a href="https://www.facebook.com/ilovejiri" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </span>
+            <i class="fab fa-tripadvisor"></i>
+            <span>
+              <a href="https://www.instagram.com/ilovejiri/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </span>
+            <span>
+              <a href="">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </span>
+            <span>
+              <a href="https://www.snapchat.com/add/jgtpradhan" target="_blank">
+                <i class="fab fa-snapchat-ghost"></i>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="footer-services">
+          <h4>Services</h4>
+          <ul class="lists">
+            <li>
+              <a href="">About Us</a>
+            </li>
+            <li>
+              <a href="">How It Works</a>
+            </li>
+            <li>
+              <a href="">Our Blog</a>
+            </li>
+            <li>
+              <a href="">Our Services</a>
+            </li>
+            <li>
+              <a href="">Write for I love Jiri</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-gallery">
+          <h4>Gallery</h4>
+          <div class="footer-gallery__items">
+            <img class="footer-gallery__item" src="./images/footer5.jpeg" />
+            <img class="footer-gallery__item" src="./images/footer4.jpeg" />
+            <img class="footer-gallery__item" src="./images/footer-3.jpeg" />
+            <img class="footer-gallery__item" src="./images/footer-img2.jpeg" />
+            <img class="footer-gallery__item" src="./images/footer-img1.jpeg" />
+            <img class="footer-gallery__item" src="./images/footer6.jpeg" />
+          </div>
+        </div>
+        <div class="footer-contacts" style="margin: auto 20px">
+          <h4>Contacts</h4>
+          <ul class="lists">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              Old Baneswor, KTM, Nepal
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              Jiri 05, Dolakha, Nepal
+            </li>
+            <li><i class="fas fa-mobile"></i> +977-9851255782</li>
+            <li>
+              <a href="mailto: contact@ilovejiri.com">
+                <i class="fas fa-envelope"></i> contact@ilovejiri.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h4 class="footer-about--small">
+        ©2021 I Love Jiri | The official guide to Jiri travel and tourism
+        information.
+        <br />
+        <a href="https://github.com/jagat0112" target="_blank">
+          <i class="fas fa-code"></i> Website By
+          <span style="font-weight: 600"> Jagat Pradhan</span>
+        </a>
+      </h4>
+      <section class="footer__img">
+        <img src="./images/aaaa.jpg" />
+      </section>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
       AOS.init();
     </script>
-	<script src="js/app.js"></script>
-</body>
+    <script src="js/app.js"></script>
+  </body>
 </html>
